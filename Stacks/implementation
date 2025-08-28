@@ -1,0 +1,67 @@
+---
+
+# 📘 Stack Data Structure – Notes
+
+## 🔹 What is a Stack?
+
+* A **Stack** is a linear data structure that follows the **LIFO (Last In, First Out)** principle.
+* This means the last element inserted is the first one to be removed.
+* Example: Think of a stack of plates – you add and remove only from the top.
+
+---
+
+## 🔹 Characteristics of Stack
+
+* **Linear data structure** → elements arranged sequentially.
+* **Access is restricted** → insertion and deletion allowed only at one end (called **Top**).
+* **Order of processing** → Last In, First Out (LIFO).
+
+---
+
+## 🔹 Operations on Stack
+
+1. **Push(x)** → Insert an element `x` into the stack (on the top).
+2. **Pop()** → Remove the top element from the stack.
+3. **Peek() / Top()** → Retrieve the top element without removing it.
+4. **isEmpty()** → Check if the stack has no elements.
+5. **Size()** → Get the total number of elements in the stack.
+
+---
+
+## 🔹 Stack Terminologies
+
+* **Top** → Pointer/reference to the most recent element inserted.
+* **Overflow** → Error when trying to push into a full stack (in fixed-size implementation).
+* **Underflow** → Error when trying to pop from an empty stack.
+
+---
+
+## 🔹 Real-World Applications of Stack
+
+* **Undo/Redo functionality** in editors
+* **Browser history** (Back and Forward navigation)
+* **Recursive function calls** (system call stack)
+* **Expression evaluation** (postfix, prefix, infix conversion)
+* **Balancing symbols** like parentheses checking
+
+---
+
+## 🔹 Advantages
+
+* Easy to implement.
+* Provides efficient memory management for function calls.
+
+---
+
+## 🔹 Limitations
+
+* Fixed size in array-based stacks may lead to overflow.
+* Access is limited (cannot directly access elements in the middle).
+
+---
+
+📌 **Summary:**
+A Stack is a simple yet powerful data structure that organizes data using the **LIFO principle**, allowing operations only at the **Top** of the stack. It is widely used in compilers, operating systems, and problem-solving.
+
+---
+
