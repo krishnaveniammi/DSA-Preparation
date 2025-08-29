@@ -1,0 +1,67 @@
+---
+
+# 📘 Hash Tables (Notes)
+
+## 🔹 What is a Hash Table?
+
+* A **Hash Table** is a data structure that stores data in **key–value pairs**.
+* It uses a **hash function** to compute an index (called a hash code) into an array of buckets, from which the desired value can be found.
+* Provides **fast access, insertion, and deletion** (on average **O(1)** time complexity).
+
+---
+
+## 🔹 Key Terminologies
+
+1. **Key** → Identifier used to store and retrieve values (e.g., "student\_id").
+2. **Value** → Data associated with the key (e.g., "Krishna").
+3. **Hash Function** → A function that converts a key into a valid index in the underlying array.
+
+   * Example: `index = hash(key) % size_of_table`
+4. **Buckets** → Slots/positions in the array where values are stored.
+
+---
+
+## 🔹 Working of Hash Table
+
+1. Input a **key**.
+2. Apply the **hash function** to compute the index.
+3. Store the **key–value pair** at that index in the array.
+4. To retrieve, reapply the hash function to find the index and get the value.
+
+---
+
+## 🔹 Collision Handling
+
+A **collision** happens when two different keys map to the same index.
+Common strategies to handle collisions:
+
+1. **Chaining** → Each bucket holds a linked list (or dynamic structure) of key–value pairs.
+2. **Open Addressing** → Find the next empty slot in the array (using techniques like linear probing, quadratic probing, or double hashing).
+
+---
+
+## 🔹 Advantages
+
+* Fast lookups, insertions, and deletions (average **O(1)**).
+* Efficient for large datasets where quick access is needed.
+
+---
+
+## 🔹 Disadvantages
+
+* Collisions can degrade performance (in worst case, **O(n)**).
+* Requires a good hash function to minimize collisions.
+* Fixed-size arrays may need resizing (rehashing).
+
+---
+
+## 🔹 Applications
+
+* **Databases** → Indexing data using keys.
+* **Compilers** → Symbol tables for variables and functions.
+* **Caching** → Store frequently used data for quick retrieval.
+* **Sets & Maps** → Implementations of associative arrays, dictionaries, etc.
+
+---
+
+
